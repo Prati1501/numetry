@@ -1,0 +1,232 @@
+
+.navbar-brand img {
+    height: 90px;
+    width: 220px;
+
+  }
+
+  .nav-item {
+    color: black;
+    font-weight: 500;
+    font-size: 15px;
+
+  }
+
+  #btn {
+    font-weight: 500;
+    color: rgb(129, 20, 20);
+
+  }
+  #btn a:hover{
+    color: white;
+  }
+
+  #banner {
+    position: absolute;
+    top: 37%;
+    left: 60%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: left;
+  }
+
+  #banner h2 {
+    font-size: 40px;
+  }
+
+  .article-list {
+    max-width: 1600px;
+    float: none;
+    margin: 0 auto;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 12%);
+    left: auto;
+    clear: both;
+  }
+
+  .slider1 {
+    padding: 3%;
+    background-color: lightgray;
+  }
+
+  .img-list {
+    display: grid;
+    grid-template-columns: repeat(11, 1fr);
+    font-size: 0;
+    overflow-x: auto;
+    scrollbar-width: none;
+    gap: 5%;
+  }
+
+  .img-item {
+    width: 100px;
+    height: 50px;
+  }
+
+  .p {
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  }
+
+  .h1 {
+    text-align: center;
+    margin-top: 5%;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 4%;
+    background-image: url('footerbg.jpg');
+    margin-top: 7%;
+  }
+
+  .icons i {
+    margin: 0 5px;
+    font-size: 10px;
+    color: white;
+    background-color: rgb(255, 77, 0);
+    padding: 10px;
+    border-radius: 50%;
+  }
+
+  .links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2%;
+  }
+
+  .link1 {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+  }
+
+  .link1:hover {
+    color: #ff5100;
+  }
+
+  .icons {
+    color: #ff5100;
+  }
+
+  #zoomin .img {
+    transform: scale(1);
+    transition: 0.5s ease;
+
+  }
+
+  #zoomin:hover .img {
+    transform: scale(1.1);
+    opacity: 0.8;
+    background: #470303;
+
+  }
+  .footer {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          padding: 4%;
+          background-image: url('footerbg.jpg');
+      }
+
+      .icons i {
+          margin: 0 5px;
+          font-size: 10px;
+          color: white;
+          background-color: rgb(255, 77, 0);
+          padding: 10px;
+          border-radius: 50%;
+      }
+
+      .links {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 2%;
+      }
+
+      .link1 {
+          text-decoration: none;
+          color: black;
+          font-size: 20px;
+      }
+
+      .link1:hover {
+          color: #ff5100;
+      }
+
+      .icons {
+          color: #ff5100;
+      }
+      @media screen and (min-width:640px)
+      {
+        .mega-menu
+        {
+          width: 1400px;
+          margin-top: 34px;
+          transform: translate3d(-580px,4px,0) !important;
+        }
+      }
+      .heading h1{
+        text-align: center;
+        padding: 25px;
+        background-color: rgb(249, 241, 241);
+        box-shadow: 1px 1px 0px 1px gray;
+
+      }
+      .head2
+
+    {
+        text-align: center;
+        padding: 50px;
+        background: orangered;
+        color: white;
+        font-family: serif;
+    }
+    .button1
+    {
+        width: 15rem;
+        height: 5rem;
+        border: none;
+        border-radius: 8px 8px 0px 0px;
+        background-color: rgb(230, 228, 228);
+        color: black;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .button2
+    {
+        width: 15rem;
+        height: 5rem;
+        border: none;
+        border-radius: 8px 8px 0px 0px;
+        background-color: orangered;
+        color: white;
+       
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .button3
+    {
+        width: 15rem;
+        height: 5rem;
+        border: none;
+        border-radius: 8px 8px 0px 0px;
+        background-color: rgb(230, 228, 228);
+        color: black;
+        font-size: 25px;
+        font-weight: 700;
+    }
+    .card1
+    {
+        padding: 15px;
+    }
+    .img1
+    {
+        height: 300px;
+        width: 550px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .col
+    {
+        box-shadow: 1px 2px 1px 1px silver;
+    }

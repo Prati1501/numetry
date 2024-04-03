@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="script.js">
+    <style>
+        .navbar-brand img {
+            height: 90px;
+            width: 220px;
+
+        }
+
+        .nav-item {
+            color: black;
+            font-weight: 500;
+            font-size: 15px;
+
+        }
+
+        #btn {
+            font-weight: 500;
+
+        }
+
+        @media screen and (min-width:640px) {
+            .mega-menu {
+                width: 1400px;
+                margin-top: 34px;
+                transform: translate3d(-580px, 4px, 0) !important;
+            }
+        }
+
+        .hero {
+            background-repeat: no-repeat;
+            position: relative;
+        }
+
+        .hero h1 {
+            width: 100%;
+            height: 110px;
+            background-color: rgba(255, 255, 255, 0.4);
+            color: rgb(34, 34, 34);
+            font-size: 60px;
+            margin-top: 20%;
+        }
+
+        .p {
+            font-size: 20px;
+            font-weight: 400;
+            margin-top: 5%;
+        }
+        
+        .footer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            padding: 4%;
+            background-image: url('footerbg.jpg');
+            margin-top: 8%;
+        }
+
+        .links {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2%;
+        }
+
+        .link1 {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+
+        .link1:hover {
+            color: #ff5100;
+        }
+
+        .icons {
+            color: #ff5100;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar sticky-top navbar-expand-md bg-light navbar-light">
+        <div class="container">
+            <a href="index2.html" class="navbar-brand"><img src="logo.png" alt=""></a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#mynav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynav">
+                <ul class="navbar-nav ml-auto text">
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Solution
+                        </a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="urban.html">Urban</a>
+                            <a class="dropdown-item" href="rural.html">Rural</a>
+                            <a class="dropdown-item" href="private.html">Private LTE</a>
+                        </div>
+
+                    </li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Products & Technologies
+                        </a>
+                        <ul class="dropdown-menu mega-menu dropdown-menu-light">
+                            <div class="row">
+                                <div class="col-md-2" style="border-right: 1px solid silver;">
+                                    <li>
+                                        <h2 class="dropdown-header px-4"
+                                            style="color: black; font-weight: 600; font-size: 15px;">Technologies</h2>
+                                    </li>
+                                    <li><a href="" class="nav-link px-4 text-black">5G</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">4G</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">3G</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">2G</a></li>
+                                </div>
+                                <div class="col-md-2">
+                                    <li>
+                                        <h4 class="dropdown-header px-3"
+                                            style="color: black; font-weight: 600; font-size: 15px;">Products <br>
+                                            ACCESS: OpenRAN</h4>
+                                    </li>
+                                    <li><a href="" class="nav-link px-4 text-black">Software-defined Open vRAN</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">5G OpenRAN</a></li>
+
+                                </div>
+                                <div class="col-md-2">
+                                    <li>
+                                        <h4 class="dropdown-header px-3"
+                                            style="color: black; font-weight: 600; font-size: 15px;">Network Software
+                                        </h4>
+                                    </li>
+                                    <li><a href="" class="nav-link px-4 text-black">Interoperable</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">unified</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">Cloud Native</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">End-to-End performane</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">Multi-tenant and Sharing</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">Secure</a></li>
+                                </div>
+                                <div class="col-md-2">
+                                    <li>
+                                        <h4 class="dropdown-header px-3"
+                                            style="color: black; font-weight: 600; font-size: 15px;">Network
+                                            Intelligence</h4>
+                                    </li>
+                                    <li><a href="" class="nav-link px-4 text-black">Analytics</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">Real-Time ALL G SON</a></li>
+                                    <li><a href="" class="nav-link px-4 text-black">Network Orchestrator</a></li>
+
+
+                                </div>
+                                <div class="col-md-3" style="background-color: green; height: 250px;">
+                                    <li>
+                                        <h1
+                                            style="color: rgb(255, 255, 255); font-weight: 600; font-size: 25px; margin-top: 15px;">
+                                            Visit our resources page <br>to download collateral, <br>watch customer
+                                            <br>testimonial, or get a specbr
+                                            sheet.
+                                        </h1>
+                                        <button class="btn"
+                                            style="font-size: 25px;   font-weight: 600; color: white;">Resources <i
+                                                class="fas fa-arrow-right"></i></button>
+                                    </li>
+                                </div>
+                            </div>
+
+                        </ul>
+
+                    </li>
+
+
+                    <li class="nav-item"><a href="customer.html" class="nav-link">Customers</a></li>
+
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="company.html"  id="navbarDropdownMenuLink" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Company
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="whoweare.html">Who we are</a>
+                            
+                            <a class="dropdown-item" href="news.html">News</a>
+                            <a class="dropdown-item" href="leadership.html">Leadership</a>
+                            <a class="dropdown-item" href="#">Awards</a>
+                            <a class="dropdown-item" href="contact.html">Contacts</a>
+                            <a class="dropdown-item" href="partner.html">Partners</a>
+                            <a class="dropdown-item" href="#">Legal</a>
+
+
+                        </div>
+                    </li>
+
+
+
+
+
+                    <li class="nav-item"><a href="career.html" class="nav-link">Careers</a></li>
+                    <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fa-solid fa-magnifying-glass"></i></a>
+                    </li>
+                    <li><button type="button" class="btn btn-outline-danger" id="btn"><a href="contactus.html">CONTACT US</a></button></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="hero" style="background-image: url(hero-customers.jpg); width: 100%; background-attachment: fixed"><br>
+        <div class="name">
+            <h1 class="text-center">Company</h1>
+        </div>
+
+    </div>
+
+
+
+    <div class="container">
+        <div class="row"
+            style="text-align: center; margin-top: 20px; font-size: 20px; font-weight: 400; font-family:Verdana, Geneva, Tahoma, sans-serif;">
+            <div class="col-md-12">
+                <h1>About Us</h1>
+                <p>Parallel Wireless is leading the OpenRAN movement with the world’s first <span
+                        style="color: orangered; font-weight: 700;">5G/4G/3G/2G </span>cloud-native OpenRAN
+                    architecture that is open, standardized, and interoperable across five key domains – RAN, Edge,
+                    Core,
+                    Orchestration and Analytics.</p>
+                <p>Through open collaboration with our OpenRAN ecosystem partners, we have created a world first and
+                    largest
+                    fully-compliant OpenRAN ecosystem that is capable of delivering the next generation of wireless
+                    infrastructure at dramatically lower cost, ensuring more equal access to 5G across the globe.</p>
+                <p>Our OpenRAN portfolio is designed to help our customers modernize their networks, reduce deployment
+                    cost and
+                    complexity, increase operational efficiency, find new revenue streams, and start deploying
+                    multi-vendor 5G
+                    networks today.</p>
+                <p>Our customers include over 60 global mobile operators, as well as private and public industries and
+                    governments that are all using our software-defined network portfolio to reimagine their networks
+                    and get
+                    ready for 5G.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-6">
+                <h1 style="margin-top: 10%;">Leadership</h1>
+                <p class="p">The Parallel Wireless team has experience building every component of the cellular network
+                    across 2G,
+                    3G, 4G and 5G. We have built many companies from scratch into the leading industry players. For the
+                    past 7+ years, our amazing team has been reimagining the architecture of the cellular networks to
+                    make deploying and maintaining any G networks, including 5G, easy and cost-effective.</p>
+                <a href="#" style="color: orangered; font-size: 20px; font-weight: 700;">Learn more<i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+            <div class="col-md-6">
+                <img src="https://www.parallelwireless.com/wp-content/uploads/leadership-image-585x415.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5 ">
+        <div class="row">
+            <div class="col-md-7">
+                <img src="https://www.parallelwireless.com/wp-content/uploads/parallel-reimagine-585x415.jpg" alt="">
+
+            </div>
+            <div class="col-md-4">
+
+                <h1 style="margin-top: 10%; ">Our Culture</h1>
+
+                <p class="p">We are a fast-moving technology company that is proud of what we do, ambitious about
+                    innovation and collaboration, and keenly focused on our customers’ success.</p>
+                <a href="#" style="color: orangered; font-size: 20px; font-weight: 700;">Join Our Global Team<i
+                        class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <div class="box5">
+          <img src="logo.png" height="90" width="200">
+          <h5>Follow Us</h5><br>
+          <div class="icons">
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-youtube"></i>
+          </div>
+        </div>
+    
+        <div class="box5">
+          <h3>IMPORTANT LINKS</h3>
+          <hr width="80%">
+          <div class="links">
+            <div class="link">
+              <a href="#" class="link1">Resources</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">About Us</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">Leadership</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">Solutions</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">News</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">Technologies</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">Contact</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">Products</a>
+            </div>
+    
+            <div class="link">
+              <a href="#" class="link1">Careers</a>
+            </div>
+    
+          </div>
+        </div>
+    
+        <div class="box5">
+          <h3>CONTACT US</h3>
+          <hr width="80%">
+          <span><i class="fa-solid fa-headphones"></i> 1-603-589-9937</span><br><br>
+          <span><i class="fa-sharp fa-solid fa-location-dot"></i> 300 Innovative Way, Suite #2310<br>Nashua, NH 03062,
+            USA</span>
+        </div>
+    
+    
+      </div>
+      <div class="copy" style="background-image: url('footerbg.jpg');">
+        <p style="font-size: 19px; margin-left: 50px;">&copy 2024 Parallel Wireless. All rights reserved.</p>
+        <p style="font-size: 19px; font-weight: 450; margin-left: 50px;">Privacy Policy | Legal | Cookies | Terms of Use | Trademarks | PO Terms & Conditions</p>
+    </div>
+
+</body>
+
+</html>
